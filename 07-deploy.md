@@ -29,6 +29,11 @@ ampla-docs/
 
 Settings → Pages → Deployments → `⋯` → **Roll back this deployment**.
 
+## Convenção de endereçamento (axio)
+
+- **Documentação:** `docs.axio.eng.br/{nome_repo}` — gerada e publicada quando o pipeline do repo de docs específico roda. Cada repo de docs usa `base: '/{nome_repo}/'` no VitePress e CNAME `docs.axio.eng.br`. Ex.: este repo → `docs.axio.eng.br/ampla-docs/`.
+- **Aplicação:** `{nome_repo}.axio.eng.br/` — o app em si (ex.: `ampla.axio.eng.br/`), servido independentemente da documentação.
+
 ## Por que este padrão
 
 - **Zero custo** (GitHub Pages) + **edge/CDN** (Cloudflare).

@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Ampla — Estrutura Desacoplada',
   description: 'Padrão de desacoplamento de propósito e regra de negócio da estrutura básica de UI (pagamentos, listas, grids, wizard).',
   lang: 'pt-BR',
+  base: '/ampla-docs/',
   cleanUrls: true,
   lastUpdated: true,
   srcExclude: ['README.md'],
