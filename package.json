@@ -1,0 +1,16 @@
+{
+  "name": "ampla-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vitepress build .",
+    "docs:build": "vitepress build .",
+    "dev": "vitepress dev .",
+    "docs:dev": "vitepress dev .",
+    "preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
