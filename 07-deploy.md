@@ -31,8 +31,12 @@ Settings → Pages → Deployments → `⋯` → **Roll back this deployment**.
 
 ## Convenção de endereçamento (axio)
 
-- **Documentação:** `docs.axio.eng.br/{nome_repo}` — gerada e publicada quando o pipeline do repo de docs específico roda. Cada repo de docs usa `base: '/{nome_repo}/'` no VitePress e CNAME `docs.axio.eng.br`. Ex.: este repo → `docs.axio.eng.br/ampla-docs/`.
+- **Documentação:** `docs.axio.eng.br/{nome_repo}` — gerada e publicada quando o pipeline do repo de docs específico roda. Cada repo de docs usa `base: '/{nome_repo}/'` no VitePress. Ex.: este repo usa `base: '/ampla-docs/'`.
 - **Aplicação:** `{nome_repo}.axio.eng.br/` — o app em si (ex.: `ampla.axio.eng.br/`), servido independentemente da documentação.
+
+> **Reserva de domínio:** o domínio `docs.axio.eng.br` já é do repo `axio-docs` (um único site GitHub Pages por domínio). Por isso este repo publica hoje em `https://nexus.axio.eng.br/ampla-docs/` (subdomínio automático do Pages). Para expor em `docs.axio.eng.br/ampla-docs/` sem quebrar o `axio-docs`, há duas opções:
+> 1. **Pasta no `axio-docs`**: mover esta documentação para `axio-docs/ampla-docs/` (modelo atual do `/ampla/`).
+> 2. **Rota de path no Cloudflare**: regra `docs.axio.eng.br/ampla-docs/*` → `axio-eng.github.io/ampla-docs/*` (mantém repos separados).
 
 ## Por que este padrão
 
