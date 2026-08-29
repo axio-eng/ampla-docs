@@ -23,7 +23,7 @@ ampla-docs/
    ```
 2. No repo → **Settings → Pages → Source: GitHub Actions**.
 3. Cada `git push` (ou `./publicar.sh "o que mudou"`) rebuilda e publica sozinho.
-4. **Domínio bonito** (`docs.axio.eng.br/ampla`): em Pages → Custom domain `docs.axio.eng.br`; no Cloudflare (zona `axio.eng.br`) criar CNAME `docs` → `axio-eng.github.io` (proxy laranja). O `public/CNAME` já trava o endereço.
+4. **Domínio bonito** (opcional): o repo `axio-docs` já ocupa `docs.axio.eng.br`, então este site publica em `https://axio-eng.github.io/ampla-docs/` por padrão. Para um subdomínio próprio (ex.: `ampla.docs.axio.eng.br`), adicione o arquivo `public/CNAME` com o endereço e crie o CNAME no Cloudflare (zona `axio.eng.br`) apontando para `axio-eng.github.io` (proxy laranja).
 
 ## Rollback
 
